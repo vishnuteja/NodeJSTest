@@ -58,11 +58,16 @@ app.use(function(err, req, res, next) {
   });
 });
 
-/*
-var http = require('http');
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+
+/*var http = require('http');
+http.createServer(function (req, res)
+{
+
+res.send('/');
+
 }).listen(3000, 'localhost');
 console.log('Server running at http://127.0.0.1:3000/');
 */
